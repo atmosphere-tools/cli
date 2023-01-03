@@ -1,5 +1,5 @@
 {
-    "name": "atmosphere/laravel",
+    "name": "atmosphere/cli",
     "description": "Atmosphere for Laravel.",
     "type": "library",
     "license": "MIT",
