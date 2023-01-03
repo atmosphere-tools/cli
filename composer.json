@@ -12,7 +12,9 @@
     "bin": [
         "bin/atmosphere"
     ],
-    "require": {},
+    "require": {
+        "php": "^8.2"
+    },
     "autoload": {
         "psr-4": {
             "Atmosphere\\Cli\\": "src/"
