@@ -13,8 +13,10 @@ readonly class Atmosphere
 
     public function run(): void
     {
+        $result = $this->input->action()->execute(
+            $this->input->arguments()
+        );
 
-
-
+        echo PHP_EOL;
     }
 }
