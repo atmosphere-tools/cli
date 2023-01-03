@@ -1,6 +1,6 @@
 {
     "name": "atmosphere/cli",
-    "description": "Atmosphere for Laravel.",
+    "description": "Atmosphere in the CLI.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,7 +15,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Atmosphere\\Laravel\\": "src/"
+            "Atmosphere\\Cli\\": "src/"
         }
     }
 }
