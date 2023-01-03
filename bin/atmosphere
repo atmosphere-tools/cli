@@ -20,6 +20,14 @@ if (is_file( __DIR__ . '/../../../autoload.php')) {
     require __DIR__ . '/../vendor/autoload.php';
 }
 
-$atmosphere = new Atmosphere();
+unset($argv[0]);
+$argc--;
+
+
+
+$atmosphere = new Atmosphere(
+        argc: $argc,
+        argv: array_values($argv)
+);
 
 
