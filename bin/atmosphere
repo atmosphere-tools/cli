@@ -1,6 +1,8 @@
 #!/usr/bin/env php
 <?php
 
+declare(strict_types=1);
+
 /**
  * Atmosphere CLI - Part of the Atmosphere development suite.
  *
@@ -10,10 +12,14 @@
  * @license  MIT
  */
 
+use Atmosphere\Cli\Atmosphere;
+
 if (is_file( __DIR__ . '/../../../autoload.php')) {
     require __DIR__ . '/../../../autoload.php';
 } else {
     require __DIR__ . '/../vendor/autoload.php';
 }
+
+$atmosphere = new Atmosphere();
 
 
