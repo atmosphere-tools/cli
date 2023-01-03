@@ -13,21 +13,23 @@ declare(strict_types=1);
  */
 
 use Atmosphere\Cli\Atmosphere;
+use Atmosphere\Cli\Models\Cli\Input;
 
-if (is_file( __DIR__ . '/../../../autoload.php')) {
-    require __DIR__ . '/../../../autoload.php';
+if (is_file(__DIR__.'/../../../autoload.php')) {
+    require __DIR__.'/../../../autoload.php';
 } else {
-    require __DIR__ . '/../vendor/autoload.php';
+    require __DIR__.'/../vendor/autoload.php';
 }
 
 unset($argv[0]);
 $argc--;
 
 
-
 $atmosphere = new Atmosphere(
+    Input::make(
         argumentCount: $argc,
-        arguments: array_values($argv)
+        arguments    : array_values($argv)
+    )
 );
 
-
+$atmosphere->run();
