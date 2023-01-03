@@ -26,8 +26,8 @@ $argc--;
 
 
 $atmosphere = new Atmosphere(
-        argc: $argc,
-        argv: array_values($argv)
+        argumentCount: $argc,
+        arguments: array_values($argv)
 );
 
 
